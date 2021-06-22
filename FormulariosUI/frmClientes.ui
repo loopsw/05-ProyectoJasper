@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmClientes</class>
+ <widget class="QMainWindow" name="frmClientes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>290</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>320</width>
+    <height>290</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Gestión de Clientes</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>166</width>
+      <height>63</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lblDni">
+        <property name="text">
+         <string>DNI/NIF</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txtDNI">
+        <property name="maxLength">
+         <number>15</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>12</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lblNombre">
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txtNombre">
+        <property name="maxLength">
+         <number>150</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="lblDireccion">
+        <property name="text">
+         <string>Dirección</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txtDireccion">
+        <property name="maxLength">
+         <number>150</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>239</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QPushButton" name="btnAceptar">
+       <property name="text">
+        <string>Aceptar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnLimpiar">
+       <property name="text">
+        <string>Limpiar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSalir">
+       <property name="text">
+        <string>Salir</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="lblFNac">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>F. Nac</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dtpFnac">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>120</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblProvincia">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>47</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Provincia</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbProvincia">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Alava</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Albacete</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Alicante</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Almeria</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Avila</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Badajoz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Barcelona</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burgos</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Caceres</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cadiz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cantabria</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Castellon</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ciudad Real</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cordoba</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>La Coruña</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cuenca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gerona</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Granada</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Guadalajara</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Guipuzcoa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Huelva</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Huesca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Islas Baleares</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Jaen</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Leon</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Lerida</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Lugo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Madrid</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Malaga</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Murcia</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Navarra</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ourense</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Palencia</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Las Palmas</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pontevedra</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>La Rioja</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Salamanca</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Segovia</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sevilla</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Soria</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tarragona</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Santa Cruz de Tenerife</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Teruel</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Toledo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Valencia</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Valladolid</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Vizcaya</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Zamora</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Zaragoza</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QCheckBox" name="chbCredito">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>160</y>
+      <width>70</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Credito</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdbAutonomo">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>190</y>
+      <width>83</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Autónomo</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rdbSociedad">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>190</y>
+      <width>83</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sociedad</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnImprimir">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>150</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Imprimir</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtDNI</tabstop>
+  <tabstop>txtNombre</tabstop>
+  <tabstop>txtDireccion</tabstop>
+  <tabstop>btnAceptar</tabstop>
+  <tabstop>btnLimpiar</tabstop>
+  <tabstop>btnSalir</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnSalir</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>frmClientes</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>250</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmClientes2</class>
+ <widget class="QMainWindow" name="frmClientes2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>590</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Gestión de clientes</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Icons/clientes2.ico</normaloff>../Icons/clientes2.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gestión de Clientes</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>571</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Datos Personales</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>32</y>
+       <width>53</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Tipo Doc:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>63</y>
+       <width>68</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Documento:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>92</y>
+       <width>47</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Nombre:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>295</x>
+       <y>63</y>
+       <width>53</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Dirección:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>297</x>
+       <y>121</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Provincia:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>301</x>
+       <y>92</y>
+       <width>47</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>C.Postal:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>121</y>
+       <width>53</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Teléfono:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>58</x>
+       <y>150</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Email:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtDNI">
+     <property name="geometry">
+      <rect>
+       <x>95</x>
+       <y>63</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#d1ccc0;
+border-radius:5px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>123456768F</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtNombre">
+     <property name="geometry">
+      <rect>
+       <x>95</x>
+       <y>91</y>
+       <width>180</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#d1ccc0;
+border-radius:5px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Ingrese su nombre</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtDireccion">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>63</y>
+       <width>180</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#d1ccc0;
+border-radius:5px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Digite su dirección</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtCP">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>91</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#d1ccc0;
+border-radius:5px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>10000</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtTelefono">
+     <property name="geometry">
+      <rect>
+       <x>95</x>
+       <y>119</y>
+       <width>150</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#d1ccc0;
+border-radius:5px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>+34695000000</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtEmail">
+     <property name="geometry">
+      <rect>
+       <x>95</x>
+       <y>147</y>
+       <width>180</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#d1ccc0;
+border-radius:5px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>name@domain.es</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>293</x>
+       <y>149</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Población:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtPoblacion">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>147</y>
+       <width>180</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#d1ccc0;
+border-radius:5px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Seleccione población</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="chbTipoDocumento">
+     <property name="geometry">
+      <rect>
+       <x>95</x>
+       <y>30</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Seleccione el tipo de documento</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>NIF</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DNI</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NIE</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pasaporte</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Otro</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cmbProvincia">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>120</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <item>
+      <property name="text">
+       <string>Alava</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Albacete</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Alicante</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Almeria</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Avila</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Badajoz</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Barcelona</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Burgos</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Caceres</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cadiz</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cantabria</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Castellon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ciudad Real</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cordoba</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>La Coruña</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cuenca</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Gerona</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Granada</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Guadalajara</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Guipuzcoa</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Huelva</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Huesca</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Islas Baleares</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Jaen</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Leon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Lerida</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Lugo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Madrid</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Malaga</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Murcia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Navarra</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ourense</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Palencia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Las Palmas</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pontevedra</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>La Rioja</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Salamanca</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Segovia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sevilla</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Soria</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tarragona</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Santa Cruz de Tenerife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Teruel</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Toledo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Valencia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Valladolid</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vizcaya</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Zamora</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Zaragoza</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>570</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Datos Cliente</string>
+    </property>
+    <widget class="QCheckBox" name="chbRecargo">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>50</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Aplica algún tipo de recargo</string>
+     </property>
+     <property name="text">
+      <string>Recargo</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="txtObservaciones">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>511</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#d1ccc0;
+border-radius:10px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Escriba su comentario aquí</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>119</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Observaciones:</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>367</x>
+       <y>30</y>
+       <width>171</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+       <widget class="QLabel" name="label_12">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Fecha de alta</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="dtmFechaAlta">
+        <property name="minimumSize">
+         <size>
+          <width>106</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="minimumDate">
+         <date>
+          <year>2020</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>171</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tipo Cliente:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboTipoCliente">
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnGuardar">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>500</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#0fb9b1;
+color:white;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Guardar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEliminar">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>500</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#0fb9b1;
+color:white;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Eliminar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLimpiar">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>500</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#0fb9b1;
+color:white;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Limpiar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSalir">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>500</y>
+      <width>111</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#F00;
+color:white;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnImprimir">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>500</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#0fb9b1;
+color:white;
+border-radius:10px;</string>
+    </property>
+    <property name="text">
+     <string>Imprimir</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>chbTipoDocumento</tabstop>
+  <tabstop>txtDNI</tabstop>
+  <tabstop>txtNombre</tabstop>
+  <tabstop>txtTelefono</tabstop>
+  <tabstop>txtEmail</tabstop>
+  <tabstop>txtDireccion</tabstop>
+  <tabstop>txtCP</tabstop>
+  <tabstop>cmbProvincia</tabstop>
+  <tabstop>txtPoblacion</tabstop>
+  <tabstop>comboTipoCliente</tabstop>
+  <tabstop>chbRecargo</tabstop>
+  <tabstop>dtmFechaAlta</tabstop>
+  <tabstop>txtObservaciones</tabstop>
+  <tabstop>btnGuardar</tabstop>
+  <tabstop>btnEliminar</tabstop>
+  <tabstop>btnLimpiar</tabstop>
+  <tabstop>btnSalir</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
