@@ -753,3 +753,6 @@ java.lang.IllegalArgumentException: Index out of boundsbug 478020: lineCount < s
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-06-24 19:32:18.667
+!MESSAGE The workspace will exit with unsaved changes in this session.
